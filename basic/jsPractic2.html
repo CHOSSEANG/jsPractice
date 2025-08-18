@@ -2,7 +2,7 @@
     <header></header>
     <body>
         # for문 순회
-        <script>
+        <!-- <script>
             let list = [1,2,3];
             let str = "abc";
             for(let i =0; i< list.length; i ++){
@@ -15,6 +15,38 @@
                 console.log(a);
             }
             for(const a of str){
+                console.log(a);
+            }
+
+        </script> -->
+
+        ### Array
+
+        <script>
+            console.log('Array-----------');
+            const arr = [1, 2,3];
+            let iter1 = arr[Symbol.iterator];
+            for(const a of arr){
+                console.log(a);
+            }
+            </script>
+
+    ### Set
+    <script>
+        console.log('Set-----------');
+        const set = new Set([1,2,3]);
+        let iter2 = set[Symbol.iterator];
+        for(const a of set){
+            console.log(a);
+        }
+    </script>
+
+    ### Map
+    <script>
+        console.log('Map-----------');
+        const map = new Map([['a',1],['b',2],['c',3]]);
+        let iter3 = map[Symbol.iterator];
+            for(const a of map){
                 console.log(a);
             }
         </script>
