@@ -1,0 +1,41 @@
+<html>
+<header>
+    <script src="../fx.js"></script>
+</header>
+
+<body>
+
+
+
+
+# 일급함수
+<script>
+    // let add = (a) => a+2;
+    // const apply1 = f => f(1);
+
+    // console.log(apply1(add));
+    // console.log(apply1((a)=>a - 1));
+
+    // const times = (f,n) => {
+    //     let i = -1;
+    //     while(++i < n) f(i);
+    // }
+
+    // times(console.log,3);
+</script>
+
+# 고차함수
+<script>
+    const addMaker = a => b => a + b;
+    const add10 = addMaker(10);
+
+    console.log(add10(2));
+
+
+</script>
+
+
+</body>
+</html>
+
+
