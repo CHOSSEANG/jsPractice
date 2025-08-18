@@ -8,10 +8,11 @@
     # 홀수 N개 더하기
 
     <script>
+        let add = (a,b) => a + b;
         function evenFun(limit,list){
 
             let acc = 0;
-            console.log(_.reduce((a,b) => a + b,
+            console.log(_.reduce(add,
                 L.take(limit, 
                     L.map(a => a*a ,
                         L.filter(a => a % 2,list)))
