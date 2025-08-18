@@ -12,11 +12,14 @@
         function evenFun(limit,list){
 
             let acc = 0;
-            console.log(_.reduce(add,
-                L.take(limit, 
-                    L.map(a => a*a ,
-                        L.filter(a => a % 2,list)))
-            ))
+            console.log(
+                _.go(
+                    L.filter(a=>a%2, list),
+                    L.map(a => a*a),
+                    L.take(limit),
+                    _.reduce(add)
+                )
+            )
         }       
         evenFun(3,[1,2,3,4,5,6,7,8,9,10]);
     </script>
