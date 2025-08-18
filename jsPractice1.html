@@ -9,11 +9,13 @@
 
     <script>
         function evenFun(limit,list){
+
             let acc = 0;
-            for(const a of L.take(limit, L.map(a => a*a ,L.filter(a => a % 2,list)))){
-                    acc += a;
-            }
-            console.log(acc);
+            console.log(_.reduce((a,b) => a + b,
+                L.take(limit, 
+                    L.map(a => a*a ,
+                        L.filter(a => a % 2,list)))
+            ))
         }       
         evenFun(3,[1,2,3,4,5,6,7,8,9,10]);
     </script>
