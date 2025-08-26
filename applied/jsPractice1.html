@@ -40,11 +40,11 @@
 
     <script>
         _.go(
-            _.range(1,6),
-            _.map(_.range),
-            _.map(_.map(_=>'*')),
-            _.map(_.reduce((a,b)=> `${a}${b}`)),
-            _.reduce((a,b) => `${a}\n${b}`),
+            L.range(1,6),
+            L.map(L.range),
+            L.map(L.map(_=>'*')),
+            L.map(L.reduce((a,b)=> `${a}${b}`)),
+            L.reduce((a,b) => `${a}\n${b}`),
             console.log
         )
     </script>
